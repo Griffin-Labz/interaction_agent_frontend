@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Network Intervention Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/cytoscape@3.28.1/dist/cytoscape.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>GUI: Generate Network</h1>
+
+      <div class="main-layout">
+        <div class="left-panel">
+          <div class="graph-container" id="cy">
+            <button class="recenter-button" id="recenter-button">
+              ⟲ Recenter
+            </button>
+          </div>
+
+          <div class="intervention-panel">
+            <label>Make an intervention:</label>
+            <select id="intervention-type">
+              <option value="increase">Type (increase/decrease)</option>
+              <option value="increase">Increase</option>
+              <option value="decrease">Decrease</option>
+            </select>
+            <input
+              type="text"
+              id="intervention-element"
+              placeholder="Element"
+              list="elements-list"
+            />
+            <datalist id="elements-list"></datalist>
+            <button id="apply-intervention">Apply</button>
+            <button id="reset-intervention">Reset</button>
+          </div>
+        </div>
+
+        <div class="right-panel" id="right-panel">
+          <div class="collapse-toggle" id="collapse-toggle">◀</div>
+          <div class="interactions-list">
+            <h3>List of interactions</h3>
+            <div id="interactions-content"></div>
+          </div>
+
+          <div class="affected-list" id="affected-panel" style="display: none">
+            <h3>List of affected elements</h3>
+            <div id="affected-content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
