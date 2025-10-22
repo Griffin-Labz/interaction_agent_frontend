@@ -940,15 +940,6 @@ function buildGraphElements(interactions) {
 function displayInteractions() {
   const container = document.getElementById('interactions-content');
   const grouped = {};
-  const referenceMap = new Map();
-  let refCounter = 1;
-
-  // First pass: assign numbers to unique DOIs
-  interactions.forEach((interaction) => {
-    if (!referenceMap.has(interaction.reference)) {
-      referenceMap.set(interaction.reference, refCounter++);
-    }
-  });
 
   interactions.forEach((interaction) => {
     const key = `${interaction.independent_variable}→${interaction.dependent_variable}`;
@@ -966,15 +957,7 @@ function displayInteractions() {
       items[0].effect === '+' ? 'effect-increase' : 'effect-decrease';
 
     html += `<div class="interaction-item">
-            <span class="${effectClass}">${iv} ${effect} ${dv} `;
-
-    items.forEach((item, idx) => {
-      if (idx > 0) html += ', ';
-      const refNum = referenceMap.get(item.reference);
-      html += `<a href="https://doi.org/${item.reference}" target="_blank" class="reference-link" title="${item.reference}">[${refNum}]</a>`;
-    });
-
-    html += `</span></div>`;
+            <span class="${effectClass}">${iv} ${effect} ${dv}</span></div>`;
   });
 
   container.innerHTML = html;
@@ -1098,17 +1081,6 @@ function displayAffectedElements(element, type, affected) {
 
   panel.style.display = 'block';
 
-  // Create reference map for numbering
-  const referenceMap = new Map();
-  let refCounter = 1;
-
-  // First pass: assign numbers to unique DOIs
-  interactions.forEach((interaction) => {
-    if (!referenceMap.has(interaction.reference)) {
-      referenceMap.set(interaction.reference, refCounter++);
-    }
-  });
-
   let html = `<div class="affected-item"><strong>Intervention:</strong> ${type} ${element}</div>`;
 
   affected.forEach((info, targetElement) => {
@@ -1121,13 +1093,7 @@ function displayAffectedElements(element, type, affected) {
 
     info.paths.forEach((pathInfo, idx) => {
       const pathStr = pathInfo.path.join(' → ');
-      const refNum = referenceMap.get(pathInfo.reference);
-      html += `<small>Path ${idx + 1}: ${pathStr}</small>
-                    <a href="https://doi.org/${
-                      pathInfo.reference
-                    }" target="_blank" class="doi-link" title="${
-        pathInfo.reference
-      }">[${refNum}]</a><br>`;
+      html += `<small>Path ${idx + 1}: ${pathStr}</small><br>`;
     });
 
     html += `</div>`;

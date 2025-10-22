@@ -54,6 +54,27 @@ h1 {
   color: #ffffff;
 }
 
+.create-graph-button {
+  background: #43b581;
+  border: 1px solid #43b581;
+  color: #ffffff;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+}
+
+.create-graph-button:hover {
+  background: #3ca374;
+  border-color: #3ca374;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(67, 181, 129, 0.3);
+}
+
 .main-layout {
   display: flex;
   gap: 20px;
