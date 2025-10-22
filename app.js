@@ -1098,6 +1098,17 @@ function displayAffectedElements(element, type, affected) {
 
   panel.style.display = 'block';
 
+  // Create reference map for numbering
+  const referenceMap = new Map();
+  let refCounter = 1;
+
+  // First pass: assign numbers to unique DOIs
+  interactions.forEach((interaction) => {
+    if (!referenceMap.has(interaction.reference)) {
+      referenceMap.set(interaction.reference, refCounter++);
+    }
+  });
+
   let html = `<div class="affected-item"><strong>Intervention:</strong> ${type} ${element}</div>`;
 
   affected.forEach((info, targetElement) => {
@@ -1110,12 +1121,13 @@ function displayAffectedElements(element, type, affected) {
 
     info.paths.forEach((pathInfo, idx) => {
       const pathStr = pathInfo.path.join(' → ');
+      const refNum = referenceMap.get(pathInfo.reference);
       html += `<small>Path ${idx + 1}: ${pathStr}</small>
                     <a href="https://doi.org/${
                       pathInfo.reference
-                    }" target="_blank" class="doi-link">[${
+                    }" target="_blank" class="doi-link" title="${
         pathInfo.reference
-      }]</a><br>`;
+      }">[${refNum}]</a><br>`;
     });
 
     html += `</div>`;
