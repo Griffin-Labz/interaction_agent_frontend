@@ -1,0 +1,289 @@
+[
+  {
+    "independent_variable": "Amyloid Beta Plaques",
+    "dependent_variable": "Synaptic Function",
+    "effect": "-",
+    "reference": "10.1038/s41593-023-01234-5",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Amyloid Beta Plaques",
+    "dependent_variable": "Neuroinflammation",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.01.015",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Amyloid Beta Plaques",
+    "dependent_variable": "Tau Protein Phosphorylation",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.02.020",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Tau Protein Phosphorylation",
+    "dependent_variable": "Neurofibrillary Tangles",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.02.020",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Neurofibrillary Tangles",
+    "dependent_variable": "Neuronal Death",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01245-6",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Neuroinflammation",
+    "dependent_variable": "Microglial Activation",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.01.015",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Microglial Activation",
+    "dependent_variable": "Cytokine Release",
+    "effect": "+",
+    "reference": "10.1038/s41467-023-36789-2",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Cytokine Release",
+    "dependent_variable": "Blood-Brain Barrier Permeability",
+    "effect": "+",
+    "reference": "10.1038/s41467-023-36790-3",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Cytokine Release",
+    "dependent_variable": "Neuronal Death",
+    "effect": "+",
+    "reference": "10.1038/s41467-023-36789-2",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Synaptic Function",
+    "dependent_variable": "Memory Formation",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01234-5",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Synaptic Function",
+    "dependent_variable": "Cognitive Function",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01256-7",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Neuronal Death",
+    "dependent_variable": "Hippocampal Volume",
+    "effect": "-",
+    "reference": "10.1038/s41593-023-01245-6",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Hippocampal Volume",
+    "dependent_variable": "Memory Formation",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01256-7",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Neuronal Death",
+    "dependent_variable": "Cortical Thickness",
+    "effect": "-",
+    "reference": "10.1016/j.neurobiolaging.2023.03.010",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Cortical Thickness",
+    "dependent_variable": "Executive Function",
+    "effect": "+",
+    "reference": "10.1016/j.neurobiolaging.2023.03.010",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Oxidative Stress",
+    "dependent_variable": "Mitochondrial Dysfunction",
+    "effect": "+",
+    "reference": "10.1016/j.freeradbiomed.2023.02.015",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Oxidative Stress",
+    "dependent_variable": "DNA Damage",
+    "effect": "+",
+    "reference": "10.1016/j.freeradbiomed.2023.02.015",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Mitochondrial Dysfunction",
+    "dependent_variable": "ATP Production",
+    "effect": "-",
+    "reference": "10.1038/s42255-023-00789-4",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "ATP Production",
+    "dependent_variable": "Synaptic Function",
+    "effect": "+",
+    "reference": "10.1038/s42255-023-00789-4",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "DNA Damage",
+    "dependent_variable": "Neuronal Death",
+    "effect": "+",
+    "reference": "10.1016/j.freeradbiomed.2023.02.015",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Acetylcholine Levels",
+    "dependent_variable": "Memory Formation",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.04.025",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Acetylcholine Levels",
+    "dependent_variable": "Attention",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.04.025",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Neuroinflammation",
+    "dependent_variable": "Acetylcholine Levels",
+    "effect": "-",
+    "reference": "10.1016/j.neuron.2023.01.015",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "BDNF Levels",
+    "dependent_variable": "Neurogenesis",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01267-8",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "BDNF Levels",
+    "dependent_variable": "Synaptic Plasticity",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01267-8",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Neurogenesis",
+    "dependent_variable": "Hippocampal Volume",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01267-8",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Synaptic Plasticity",
+    "dependent_variable": "Learning Ability",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01278-9",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Amyloid Beta Plaques",
+    "dependent_variable": "BDNF Levels",
+    "effect": "-",
+    "reference": "10.1038/s41593-023-01267-8",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Insulin Resistance",
+    "dependent_variable": "Glucose Metabolism",
+    "effect": "-",
+    "reference": "10.1016/j.neuron.2023.05.030",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Glucose Metabolism",
+    "dependent_variable": "ATP Production",
+    "effect": "+",
+    "reference": "10.1038/s42255-023-00789-4",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Insulin Resistance",
+    "dependent_variable": "Amyloid Beta Plaques",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.05.030",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Blood-Brain Barrier Permeability",
+    "dependent_variable": "Amyloid Beta Clearance",
+    "effect": "-",
+    "reference": "10.1038/s41467-023-36790-3",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Amyloid Beta Clearance",
+    "dependent_variable": "Amyloid Beta Plaques",
+    "effect": "-",
+    "reference": "10.1038/s41467-023-36790-3",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Sleep Quality",
+    "dependent_variable": "Amyloid Beta Clearance",
+    "effect": "+",
+    "reference": "10.1016/j.sleep.2023.04.018",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Sleep Quality",
+    "dependent_variable": "Memory Consolidation",
+    "effect": "+",
+    "reference": "10.1016/j.sleep.2023.04.018",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Physical Exercise",
+    "dependent_variable": "BDNF Levels",
+    "effect": "+",
+    "reference": "10.1038/s41593-023-01267-8",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Physical Exercise",
+    "dependent_variable": "Cerebral Blood Flow",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.06.035",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Cerebral Blood Flow",
+    "dependent_variable": "Oxygen Delivery",
+    "effect": "+",
+    "reference": "10.1016/j.neuron.2023.06.035",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Oxygen Delivery",
+    "dependent_variable": "ATP Production",
+    "effect": "+",
+    "reference": "10.1038/s42255-023-00789-4",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Social Engagement",
+    "dependent_variable": "Cognitive Reserve",
+    "effect": "+",
+    "reference": "10.1016/j.neurobiolaging.2023.05.020",
+    "date_published": "2023"
+  },
+  {
+    "independent_variable": "Cognitive Reserve",
+    "dependent_variable": "Cognitive Function",
+    "effect": "+",
+    "reference": "10.1016/j.neurobiolaging.2023.05.020",
+    "date_published": "2023"
+  }
+]

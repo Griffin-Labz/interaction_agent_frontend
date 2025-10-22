@@ -1,0 +1,254 @@
+[
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "VO2 Max",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Mitochondrial Biogenesis",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00789.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "EPOC",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "VO2 Max",
+    "dependent_variable": "Cardiovascular Endurance",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "VO2 Max",
+    "dependent_variable": "Aerobic Capacity",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003467",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Mitochondrial Biogenesis",
+    "dependent_variable": "Oxidative Capacity",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00789.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Mitochondrial Biogenesis",
+    "dependent_variable": "Fat Oxidation",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00790.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "EPOC",
+    "dependent_variable": "Caloric Expenditure",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Fat Oxidation",
+    "dependent_variable": "Body Fat Percentage",
+    "effect": "-",
+    "reference": "10.1152/japplphysiol.00790.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Caloric Expenditure",
+    "dependent_variable": "Body Fat Percentage",
+    "effect": "-",
+    "reference": "10.1038/s41366-024-01234-5",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Insulin Sensitivity",
+    "effect": "+",
+    "reference": "10.2337/db23-0456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Insulin Sensitivity",
+    "dependent_variable": "Glucose Uptake",
+    "effect": "+",
+    "reference": "10.2337/db23-0456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Glucose Uptake",
+    "dependent_variable": "Blood Glucose Levels",
+    "effect": "-",
+    "reference": "10.2337/db23-0456",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "GLUT4 Expression",
+    "effect": "+",
+    "reference": "10.2337/db23-0467",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "GLUT4 Expression",
+    "dependent_variable": "Glucose Uptake",
+    "effect": "+",
+    "reference": "10.2337/db23-0467",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Growth Hormone",
+    "effect": "+",
+    "reference": "10.1210/endocr/bqad123",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Growth Hormone",
+    "dependent_variable": "Lipolysis",
+    "effect": "+",
+    "reference": "10.1210/endocr/bqad123",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Growth Hormone",
+    "dependent_variable": "Muscle Protein Synthesis",
+    "effect": "+",
+    "reference": "10.1210/endocr/bqad134",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Lipolysis",
+    "dependent_variable": "Free Fatty Acids",
+    "effect": "+",
+    "reference": "10.1210/endocr/bqad123",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Free Fatty Acids",
+    "dependent_variable": "Fat Oxidation",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00790.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Muscle Protein Synthesis",
+    "dependent_variable": "Lean Muscle Mass",
+    "effect": "+",
+    "reference": "10.1210/endocr/bqad134",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Catecholamine Release",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00801.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Catecholamine Release",
+    "dependent_variable": "Heart Rate",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00801.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Catecholamine Release",
+    "dependent_variable": "Lipolysis",
+    "effect": "+",
+    "reference": "10.1210/endocr/bqad123",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Heart Rate",
+    "dependent_variable": "Cardiac Output",
+    "effect": "+",
+    "reference": "10.1161/CIRCRESAHA.123.456789",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Cardiac Output",
+    "dependent_variable": "Oxygen Delivery",
+    "effect": "+",
+    "reference": "10.1161/CIRCRESAHA.123.456789",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Stroke Volume",
+    "effect": "+",
+    "reference": "10.1161/CIRCRESAHA.123.456790",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Stroke Volume",
+    "dependent_variable": "Cardiac Output",
+    "effect": "+",
+    "reference": "10.1161/CIRCRESAHA.123.456790",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "PGC-1alpha Expression",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00812.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "PGC-1alpha Expression",
+    "dependent_variable": "Mitochondrial Biogenesis",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00812.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Lactate Threshold",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003478",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Lactate Threshold",
+    "dependent_variable": "Exercise Performance",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003478",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "HIIT Training",
+    "dependent_variable": "Capillary Density",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00823.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Capillary Density",
+    "dependent_variable": "Oxygen Delivery",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00823.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Capillary Density",
+    "dependent_variable": "Nutrient Delivery",
+    "effect": "+",
+    "reference": "10.1152/japplphysiol.00823.2023",
+    "date_published": "2024"
+  },
+  {
+    "independent_variable": "Nutrient Delivery",
+    "dependent_variable": "Muscle Recovery",
+    "effect": "+",
+    "reference": "10.1249/MSS.0000000000003489",
+    "date_published": "2024"
+  }
+]

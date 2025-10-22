@@ -19,9 +19,39 @@ body {
 
 h1 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-size: 24px;
   font-weight: 500;
+}
+
+.view-switcher {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.view-button {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  color: #dcddde;
+  padding: 10px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.view-button:hover {
+  background: #3a3a3a;
+  border-color: #606060;
+}
+
+.view-button.active {
+  background: #5865f2;
+  border-color: #5865f2;
+  color: #ffffff;
 }
 
 .main-layout {

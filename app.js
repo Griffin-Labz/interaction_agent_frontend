@@ -1,233 +1,37 @@
-const interactions = [
-  {
-    independent_variable: 'Exercise',
-    dependent_variable: 'Muscle Mass',
-    effect: '+',
-    reference: '10.3390/nu17172748',
-    date_published: '2025-Aug-25',
-  },
-  {
-    independent_variable: 'Exercise',
-    dependent_variable: 'Body Fat',
-    effect: '-',
-    reference: '10.3390/nu17172748',
-    date_published: '2025-Aug-25',
-  },
-  {
-    independent_variable: 'Exercise',
-    dependent_variable: 'Insulin Sensitivity',
-    effect: '+',
-    reference: '10.3390/nu17010058',
-    date_published: '2024-Dec-27',
-  },
-  {
-    independent_variable: 'Muscle Mass',
-    dependent_variable: 'Metabolic Rate',
-    effect: '+',
-    reference: '10.3390/nu17172748',
-    date_published: '2025-Aug-25',
-  },
-  {
-    independent_variable: 'Muscle Mass',
-    dependent_variable: 'Glucose Uptake',
-    effect: '+',
-    reference: '10.3390/nu17010058',
-    date_published: '2024-Dec-27',
-  },
-  {
-    independent_variable: 'Body Fat',
-    dependent_variable: 'Inflammation',
-    effect: '+',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Body Fat',
-    dependent_variable: 'Insulin Sensitivity',
-    effect: '-',
-    reference: '10.3390/nu17010058',
-    date_published: '2024-Dec-27',
-  },
-  {
-    independent_variable: 'Insulin Sensitivity',
-    dependent_variable: 'Blood Glucose',
-    effect: '-',
-    reference: '10.3390/nu17010058',
-    date_published: '2024-Dec-27',
-  },
-  {
-    independent_variable: 'Inflammation',
-    dependent_variable: 'Insulin Sensitivity',
-    effect: '-',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Inflammation',
-    dependent_variable: 'Joint Pain',
-    effect: '+',
-    reference: '10.1186/s12891-025-08723-8',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Blood Glucose',
-    dependent_variable: 'HbA1c',
-    effect: '+',
-    reference: '10.3390/nu17010058',
-    date_published: '2024-Dec-27',
-  },
-  {
-    independent_variable: 'Blood Glucose',
-    dependent_variable: 'Oxidative Stress',
-    effect: '+',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Creatine Supplementation',
-    dependent_variable: 'Muscle Mass',
-    effect: '+',
-    reference: '10.3390/nu17172748',
-    date_published: '2025-Aug-25',
-  },
-  {
-    independent_variable: 'Creatine Supplementation',
-    dependent_variable: 'Muscle Strength',
-    effect: '+',
-    reference: '10.3390/nu17132074',
-    date_published: '2025-Jun-21',
-  },
-  {
-    independent_variable: 'Creatine Supplementation',
-    dependent_variable: 'Exercise Recovery',
-    effect: '+',
-    reference: '10.3390/nu17111772',
-    date_published: '2025-May-23',
-  },
-  {
-    independent_variable: 'Muscle Strength',
-    dependent_variable: 'Exercise Performance',
-    effect: '+',
-    reference: '10.3390/nu17132074',
-    date_published: '2025-Jun-21',
-  },
-  {
-    independent_variable: 'Exercise Performance',
-    dependent_variable: 'Training Volume',
-    effect: '+',
-    reference: '10.3390/nu17172748',
-    date_published: '2025-Aug-25',
-  },
-  {
-    independent_variable: 'Training Volume',
-    dependent_variable: 'Muscle Mass',
-    effect: '+',
-    reference: '10.3390/nu17172748',
-    date_published: '2025-Aug-25',
-  },
-  {
-    independent_variable: 'Omega-3 Fatty Acids',
-    dependent_variable: 'Inflammation',
-    effect: '-',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Omega-3 Fatty Acids',
-    dependent_variable: 'Triglycerides',
-    effect: '-',
-    reference: '10.3390/nu17010058',
-    date_published: '2024-Dec-27',
-  },
-  {
-    independent_variable: 'Protein Intake',
-    dependent_variable: 'Muscle Mass',
-    effect: '+',
-    reference: '10.3389/fnut.2025.1670641',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Protein Intake',
-    dependent_variable: 'Satiety',
-    effect: '+',
-    reference: '10.3389/fnut.2025.1670641',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Satiety',
-    dependent_variable: 'Caloric Intake',
-    effect: '-',
-    reference: '10.3389/fnut.2025.1670641',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Caloric Intake',
-    dependent_variable: 'Body Fat',
-    effect: '+',
-    reference: '10.3389/fnut.2025.1670641',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Sleep Quality',
-    dependent_variable: 'Cortisol',
-    effect: '-',
-    reference: '10.7150/ijms.115788',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Sleep Quality',
-    dependent_variable: 'Recovery Rate',
-    effect: '+',
-    reference: '10.7150/ijms.115788',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Cortisol',
-    dependent_variable: 'Muscle Mass',
-    effect: '-',
-    reference: '10.7150/ijms.115788',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Cortisol',
-    dependent_variable: 'Inflammation',
-    effect: '+',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Recovery Rate',
-    dependent_variable: 'Exercise Performance',
-    effect: '+',
-    reference: '10.3390/nu17111772',
-    date_published: '2025-May-23',
-  },
-  {
-    independent_variable: 'Oxidative Stress',
-    dependent_variable: 'Cellular Damage',
-    effect: '+',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-  {
-    independent_variable: 'Cellular Damage',
-    dependent_variable: 'Aging Markers',
-    effect: '+',
-    reference: '10.1038/s42255-025-01311-z',
-    date_published: '2025',
-  },
-];
-
+let interactions = [];
 let cy;
 let currentIntervention = null;
+let currentView = 'exercise';
 
-function loadInteractions() {
-  initializeGraph();
-  displayInteractions();
-  populateElementsList();
+const viewFiles = {
+  exercise: 'interactions.json',
+  alzheimers: 'interactions-alzheimers.json',
+  hiit: 'interactions-hiit.json',
+};
+
+async function loadInteractions(view = 'exercise') {
+  try {
+    const response = await fetch(viewFiles[view]);
+    if (!response.ok) {
+      throw new Error(`Failed to load ${viewFiles[view]}`);
+    }
+    interactions = await response.json();
+    initializeGraph();
+    displayInteractions();
+    populateElementsList();
+    resetIntervention();
+  } catch (error) {
+    console.error('Error loading interactions:', error);
+    alert('Failed to load interaction data. Please try again.');
+  }
 }
 
 function initializeGraph() {
+  // Destroy existing graph if it exists
+  if (cy) {
+    cy.destroy();
+  }
+
   const elements = buildGraphElements(interactions);
 
   cy = cytoscape({
@@ -610,4 +414,28 @@ document.getElementById('recenter-button').addEventListener('click', () => {
   }
 });
 
-loadInteractions();
+// View switcher functionality
+function switchView(view) {
+  currentView = view;
+
+  // Update button states
+  document.querySelectorAll('.view-button').forEach((button) => {
+    button.classList.remove('active');
+    if (button.dataset.view === view) {
+      button.classList.add('active');
+    }
+  });
+
+  // Load new interactions
+  loadInteractions(view);
+}
+
+// Add event listeners to view buttons
+document.querySelectorAll('.view-button').forEach((button) => {
+  button.addEventListener('click', () => {
+    switchView(button.dataset.view);
+  });
+});
+
+// Initialize with default view
+loadInteractions(currentView);
