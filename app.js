@@ -1,29 +1,140 @@
+// Data for Exercise & Nutrition view
+const exerciseData = [
+  { independent_variable: 'Exercise', dependent_variable: 'Muscle Mass', effect: '+', reference: '10.3390/nu17172748', date_published: '2025-Aug-25' },
+  { independent_variable: 'Exercise', dependent_variable: 'Body Fat', effect: '-', reference: '10.3390/nu17172748', date_published: '2025-Aug-25' },
+  { independent_variable: 'Exercise', dependent_variable: 'Insulin Sensitivity', effect: '+', reference: '10.3390/nu17010058', date_published: '2024-Dec-27' },
+  { independent_variable: 'Muscle Mass', dependent_variable: 'Metabolic Rate', effect: '+', reference: '10.3390/nu17172748', date_published: '2025-Aug-25' },
+  { independent_variable: 'Muscle Mass', dependent_variable: 'Glucose Uptake', effect: '+', reference: '10.3390/nu17010058', date_published: '2024-Dec-27' },
+  { independent_variable: 'Body Fat', dependent_variable: 'Inflammation', effect: '+', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+  { independent_variable: 'Body Fat', dependent_variable: 'Insulin Sensitivity', effect: '-', reference: '10.3390/nu17010058', date_published: '2024-Dec-27' },
+  { independent_variable: 'Insulin Sensitivity', dependent_variable: 'Blood Glucose', effect: '-', reference: '10.3390/nu17010058', date_published: '2024-Dec-27' },
+  { independent_variable: 'Inflammation', dependent_variable: 'Insulin Sensitivity', effect: '-', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+  { independent_variable: 'Inflammation', dependent_variable: 'Joint Pain', effect: '+', reference: '10.1186/s12891-025-08723-8', date_published: '2025' },
+  { independent_variable: 'Blood Glucose', dependent_variable: 'HbA1c', effect: '+', reference: '10.3390/nu17010058', date_published: '2024-Dec-27' },
+  { independent_variable: 'Blood Glucose', dependent_variable: 'Oxidative Stress', effect: '+', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+  { independent_variable: 'Creatine Supplementation', dependent_variable: 'Muscle Mass', effect: '+', reference: '10.3390/nu17172748', date_published: '2025-Aug-25' },
+  { independent_variable: 'Creatine Supplementation', dependent_variable: 'Muscle Strength', effect: '+', reference: '10.3390/nu17132074', date_published: '2025-Jun-21' },
+  { independent_variable: 'Creatine Supplementation', dependent_variable: 'Exercise Recovery', effect: '+', reference: '10.3390/nu17111772', date_published: '2025-May-23' },
+  { independent_variable: 'Muscle Strength', dependent_variable: 'Exercise Performance', effect: '+', reference: '10.3390/nu17132074', date_published: '2025-Jun-21' },
+  { independent_variable: 'Exercise Performance', dependent_variable: 'Training Volume', effect: '+', reference: '10.3390/nu17172748', date_published: '2025-Aug-25' },
+  { independent_variable: 'Training Volume', dependent_variable: 'Muscle Mass', effect: '+', reference: '10.3390/nu17172748', date_published: '2025-Aug-25' },
+  { independent_variable: 'Omega-3 Fatty Acids', dependent_variable: 'Inflammation', effect: '-', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+  { independent_variable: 'Omega-3 Fatty Acids', dependent_variable: 'Triglycerides', effect: '-', reference: '10.3390/nu17010058', date_published: '2024-Dec-27' },
+  { independent_variable: 'Protein Intake', dependent_variable: 'Muscle Mass', effect: '+', reference: '10.3389/fnut.2025.1670641', date_published: '2025' },
+  { independent_variable: 'Protein Intake', dependent_variable: 'Satiety', effect: '+', reference: '10.3389/fnut.2025.1670641', date_published: '2025' },
+  { independent_variable: 'Satiety', dependent_variable: 'Caloric Intake', effect: '-', reference: '10.3389/fnut.2025.1670641', date_published: '2025' },
+  { independent_variable: 'Caloric Intake', dependent_variable: 'Body Fat', effect: '+', reference: '10.3389/fnut.2025.1670641', date_published: '2025' },
+  { independent_variable: 'Sleep Quality', dependent_variable: 'Cortisol', effect: '-', reference: '10.7150/ijms.115788', date_published: '2025' },
+  { independent_variable: 'Sleep Quality', dependent_variable: 'Recovery Rate', effect: '+', reference: '10.7150/ijms.115788', date_published: '2025' },
+  { independent_variable: 'Cortisol', dependent_variable: 'Muscle Mass', effect: '-', reference: '10.7150/ijms.115788', date_published: '2025' },
+  { independent_variable: 'Cortisol', dependent_variable: 'Inflammation', effect: '+', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+  { independent_variable: 'Recovery Rate', dependent_variable: 'Exercise Performance', effect: '+', reference: '10.3390/nu17111772', date_published: '2025-May-23' },
+  { independent_variable: 'Oxidative Stress', dependent_variable: 'Cellular Damage', effect: '+', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+  { independent_variable: 'Cellular Damage', dependent_variable: 'Aging Markers', effect: '+', reference: '10.1038/s42255-025-01311-z', date_published: '2025' },
+];
+
+// Data for Alzheimer's Disease view
+const alzheimersData = [
+  { independent_variable: 'Amyloid Beta Plaques', dependent_variable: 'Synaptic Function', effect: '-', reference: '10.1038/s41593-023-01234-5', date_published: '2023' },
+  { independent_variable: 'Amyloid Beta Plaques', dependent_variable: 'Neuroinflammation', effect: '+', reference: '10.1016/j.neuron.2023.01.015', date_published: '2023' },
+  { independent_variable: 'Amyloid Beta Plaques', dependent_variable: 'Tau Protein Phosphorylation', effect: '+', reference: '10.1016/j.neuron.2023.02.020', date_published: '2023' },
+  { independent_variable: 'Tau Protein Phosphorylation', dependent_variable: 'Neurofibrillary Tangles', effect: '+', reference: '10.1016/j.neuron.2023.02.020', date_published: '2023' },
+  { independent_variable: 'Neurofibrillary Tangles', dependent_variable: 'Neuronal Death', effect: '+', reference: '10.1038/s41593-023-01245-6', date_published: '2023' },
+  { independent_variable: 'Neuroinflammation', dependent_variable: 'Microglial Activation', effect: '+', reference: '10.1016/j.neuron.2023.01.015', date_published: '2023' },
+  { independent_variable: 'Microglial Activation', dependent_variable: 'Cytokine Release', effect: '+', reference: '10.1038/s41467-023-36789-2', date_published: '2023' },
+  { independent_variable: 'Cytokine Release', dependent_variable: 'Blood-Brain Barrier Permeability', effect: '+', reference: '10.1038/s41467-023-36790-3', date_published: '2023' },
+  { independent_variable: 'Cytokine Release', dependent_variable: 'Neuronal Death', effect: '+', reference: '10.1038/s41467-023-36789-2', date_published: '2023' },
+  { independent_variable: 'Synaptic Function', dependent_variable: 'Memory Formation', effect: '+', reference: '10.1038/s41593-023-01234-5', date_published: '2023' },
+  { independent_variable: 'Synaptic Function', dependent_variable: 'Cognitive Function', effect: '+', reference: '10.1038/s41593-023-01256-7', date_published: '2023' },
+  { independent_variable: 'Neuronal Death', dependent_variable: 'Hippocampal Volume', effect: '-', reference: '10.1038/s41593-023-01245-6', date_published: '2023' },
+  { independent_variable: 'Hippocampal Volume', dependent_variable: 'Memory Formation', effect: '+', reference: '10.1038/s41593-023-01256-7', date_published: '2023' },
+  { independent_variable: 'Neuronal Death', dependent_variable: 'Cortical Thickness', effect: '-', reference: '10.1016/j.neurobiolaging.2023.03.010', date_published: '2023' },
+  { independent_variable: 'Cortical Thickness', dependent_variable: 'Executive Function', effect: '+', reference: '10.1016/j.neurobiolaging.2023.03.010', date_published: '2023' },
+  { independent_variable: 'Oxidative Stress', dependent_variable: 'Mitochondrial Dysfunction', effect: '+', reference: '10.1016/j.freeradbiomed.2023.02.015', date_published: '2023' },
+  { independent_variable: 'Oxidative Stress', dependent_variable: 'DNA Damage', effect: '+', reference: '10.1016/j.freeradbiomed.2023.02.015', date_published: '2023' },
+  { independent_variable: 'Mitochondrial Dysfunction', dependent_variable: 'ATP Production', effect: '-', reference: '10.1038/s42255-023-00789-4', date_published: '2023' },
+  { independent_variable: 'ATP Production', dependent_variable: 'Synaptic Function', effect: '+', reference: '10.1038/s42255-023-00789-4', date_published: '2023' },
+  { independent_variable: 'DNA Damage', dependent_variable: 'Neuronal Death', effect: '+', reference: '10.1016/j.freeradbiomed.2023.02.015', date_published: '2023' },
+  { independent_variable: 'Acetylcholine Levels', dependent_variable: 'Memory Formation', effect: '+', reference: '10.1016/j.neuron.2023.04.025', date_published: '2023' },
+  { independent_variable: 'Acetylcholine Levels', dependent_variable: 'Attention', effect: '+', reference: '10.1016/j.neuron.2023.04.025', date_published: '2023' },
+  { independent_variable: 'Neuroinflammation', dependent_variable: 'Acetylcholine Levels', effect: '-', reference: '10.1016/j.neuron.2023.01.015', date_published: '2023' },
+  { independent_variable: 'BDNF Levels', dependent_variable: 'Neurogenesis', effect: '+', reference: '10.1038/s41593-023-01267-8', date_published: '2023' },
+  { independent_variable: 'BDNF Levels', dependent_variable: 'Synaptic Plasticity', effect: '+', reference: '10.1038/s41593-023-01267-8', date_published: '2023' },
+  { independent_variable: 'Neurogenesis', dependent_variable: 'Hippocampal Volume', effect: '+', reference: '10.1038/s41593-023-01267-8', date_published: '2023' },
+  { independent_variable: 'Synaptic Plasticity', dependent_variable: 'Learning Ability', effect: '+', reference: '10.1038/s41593-023-01278-9', date_published: '2023' },
+  { independent_variable: 'Amyloid Beta Plaques', dependent_variable: 'BDNF Levels', effect: '-', reference: '10.1038/s41593-023-01267-8', date_published: '2023' },
+  { independent_variable: 'Insulin Resistance', dependent_variable: 'Glucose Metabolism', effect: '-', reference: '10.1016/j.neuron.2023.05.030', date_published: '2023' },
+  { independent_variable: 'Glucose Metabolism', dependent_variable: 'ATP Production', effect: '+', reference: '10.1038/s42255-023-00789-4', date_published: '2023' },
+  { independent_variable: 'Insulin Resistance', dependent_variable: 'Amyloid Beta Plaques', effect: '+', reference: '10.1016/j.neuron.2023.05.030', date_published: '2023' },
+  { independent_variable: 'Blood-Brain Barrier Permeability', dependent_variable: 'Amyloid Beta Clearance', effect: '-', reference: '10.1038/s41467-023-36790-3', date_published: '2023' },
+  { independent_variable: 'Amyloid Beta Clearance', dependent_variable: 'Amyloid Beta Plaques', effect: '-', reference: '10.1038/s41467-023-36790-3', date_published: '2023' },
+  { independent_variable: 'Sleep Quality', dependent_variable: 'Amyloid Beta Clearance', effect: '+', reference: '10.1016/j.sleep.2023.04.018', date_published: '2023' },
+  { independent_variable: 'Sleep Quality', dependent_variable: 'Memory Consolidation', effect: '+', reference: '10.1016/j.sleep.2023.04.018', date_published: '2023' },
+  { independent_variable: 'Physical Exercise', dependent_variable: 'BDNF Levels', effect: '+', reference: '10.1038/s41593-023-01267-8', date_published: '2023' },
+  { independent_variable: 'Physical Exercise', dependent_variable: 'Cerebral Blood Flow', effect: '+', reference: '10.1016/j.neuron.2023.06.035', date_published: '2023' },
+  { independent_variable: 'Cerebral Blood Flow', dependent_variable: 'Oxygen Delivery', effect: '+', reference: '10.1016/j.neuron.2023.06.035', date_published: '2023' },
+  { independent_variable: 'Oxygen Delivery', dependent_variable: 'ATP Production', effect: '+', reference: '10.1038/s42255-023-00789-4', date_published: '2023' },
+  { independent_variable: 'Social Engagement', dependent_variable: 'Cognitive Reserve', effect: '+', reference: '10.1016/j.neurobiolaging.2023.05.020', date_published: '2023' },
+  { independent_variable: 'Cognitive Reserve', dependent_variable: 'Cognitive Function', effect: '+', reference: '10.1016/j.neurobiolaging.2023.05.020', date_published: '2023' },
+];
+
+// Data for HIIT Workouts view
+const hiitData = [
+  { independent_variable: 'HIIT Training', dependent_variable: 'VO2 Max', effect: '+', reference: '10.1249/MSS.0000000000003456', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Mitochondrial Biogenesis', effect: '+', reference: '10.1152/japplphysiol.00789.2023', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'EPOC', effect: '+', reference: '10.1249/MSS.0000000000003456', date_published: '2024' },
+  { independent_variable: 'VO2 Max', dependent_variable: 'Cardiovascular Endurance', effect: '+', reference: '10.1249/MSS.0000000000003456', date_published: '2024' },
+  { independent_variable: 'VO2 Max', dependent_variable: 'Aerobic Capacity', effect: '+', reference: '10.1249/MSS.0000000000003467', date_published: '2024' },
+  { independent_variable: 'Mitochondrial Biogenesis', dependent_variable: 'Oxidative Capacity', effect: '+', reference: '10.1152/japplphysiol.00789.2023', date_published: '2024' },
+  { independent_variable: 'Mitochondrial Biogenesis', dependent_variable: 'Fat Oxidation', effect: '+', reference: '10.1152/japplphysiol.00790.2023', date_published: '2024' },
+  { independent_variable: 'EPOC', dependent_variable: 'Caloric Expenditure', effect: '+', reference: '10.1249/MSS.0000000000003456', date_published: '2024' },
+  { independent_variable: 'Fat Oxidation', dependent_variable: 'Body Fat Percentage', effect: '-', reference: '10.1152/japplphysiol.00790.2023', date_published: '2024' },
+  { independent_variable: 'Caloric Expenditure', dependent_variable: 'Body Fat Percentage', effect: '-', reference: '10.1038/s41366-024-01234-5', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Insulin Sensitivity', effect: '+', reference: '10.2337/db23-0456', date_published: '2024' },
+  { independent_variable: 'Insulin Sensitivity', dependent_variable: 'Glucose Uptake', effect: '+', reference: '10.2337/db23-0456', date_published: '2024' },
+  { independent_variable: 'Glucose Uptake', dependent_variable: 'Blood Glucose Levels', effect: '-', reference: '10.2337/db23-0456', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'GLUT4 Expression', effect: '+', reference: '10.2337/db23-0467', date_published: '2024' },
+  { independent_variable: 'GLUT4 Expression', dependent_variable: 'Glucose Uptake', effect: '+', reference: '10.2337/db23-0467', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Growth Hormone', effect: '+', reference: '10.1210/endocr/bqad123', date_published: '2024' },
+  { independent_variable: 'Growth Hormone', dependent_variable: 'Lipolysis', effect: '+', reference: '10.1210/endocr/bqad123', date_published: '2024' },
+  { independent_variable: 'Growth Hormone', dependent_variable: 'Muscle Protein Synthesis', effect: '+', reference: '10.1210/endocr/bqad134', date_published: '2024' },
+  { independent_variable: 'Lipolysis', dependent_variable: 'Free Fatty Acids', effect: '+', reference: '10.1210/endocr/bqad123', date_published: '2024' },
+  { independent_variable: 'Free Fatty Acids', dependent_variable: 'Fat Oxidation', effect: '+', reference: '10.1152/japplphysiol.00790.2023', date_published: '2024' },
+  { independent_variable: 'Muscle Protein Synthesis', dependent_variable: 'Lean Muscle Mass', effect: '+', reference: '10.1210/endocr/bqad134', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Catecholamine Release', effect: '+', reference: '10.1152/japplphysiol.00801.2023', date_published: '2024' },
+  { independent_variable: 'Catecholamine Release', dependent_variable: 'Heart Rate', effect: '+', reference: '10.1152/japplphysiol.00801.2023', date_published: '2024' },
+  { independent_variable: 'Catecholamine Release', dependent_variable: 'Lipolysis', effect: '+', reference: '10.1210/endocr/bqad123', date_published: '2024' },
+  { independent_variable: 'Heart Rate', dependent_variable: 'Cardiac Output', effect: '+', reference: '10.1161/CIRCRESAHA.123.456789', date_published: '2024' },
+  { independent_variable: 'Cardiac Output', dependent_variable: 'Oxygen Delivery', effect: '+', reference: '10.1161/CIRCRESAHA.123.456789', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Stroke Volume', effect: '+', reference: '10.1161/CIRCRESAHA.123.456790', date_published: '2024' },
+  { independent_variable: 'Stroke Volume', dependent_variable: 'Cardiac Output', effect: '+', reference: '10.1161/CIRCRESAHA.123.456790', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'PGC-1alpha Expression', effect: '+', reference: '10.1152/japplphysiol.00812.2023', date_published: '2024' },
+  { independent_variable: 'PGC-1alpha Expression', dependent_variable: 'Mitochondrial Biogenesis', effect: '+', reference: '10.1152/japplphysiol.00812.2023', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Lactate Threshold', effect: '+', reference: '10.1249/MSS.0000000000003478', date_published: '2024' },
+  { independent_variable: 'Lactate Threshold', dependent_variable: 'Exercise Performance', effect: '+', reference: '10.1249/MSS.0000000000003478', date_published: '2024' },
+  { independent_variable: 'HIIT Training', dependent_variable: 'Capillary Density', effect: '+', reference: '10.1152/japplphysiol.00823.2023', date_published: '2024' },
+  { independent_variable: 'Capillary Density', dependent_variable: 'Oxygen Delivery', effect: '+', reference: '10.1152/japplphysiol.00823.2023', date_published: '2024' },
+  { independent_variable: 'Capillary Density', dependent_variable: 'Nutrient Delivery', effect: '+', reference: '10.1152/japplphysiol.00823.2023', date_published: '2024' },
+  { independent_variable: 'Nutrient Delivery', dependent_variable: 'Muscle Recovery', effect: '+', reference: '10.1249/MSS.0000000000003489', date_published: '2024' },
+];
+
+const dataViews = {
+  exercise: exerciseData,
+  alzheimers: alzheimersData,
+  hiit: hiitData,
+};
+
 let interactions = [];
 let cy;
 let currentIntervention = null;
 let currentView = 'exercise';
 
-const viewFiles = {
-  exercise: 'interactions.json',
-  alzheimers: 'interactions-alzheimers.json',
-  hiit: 'interactions-hiit.json',
-};
-
-async function loadInteractions(view = 'exercise') {
-  try {
-    const response = await fetch(viewFiles[view]);
-    if (!response.ok) {
-      throw new Error(`Failed to load ${viewFiles[view]}`);
-    }
-    interactions = await response.json();
-    initializeGraph();
-    displayInteractions();
-    populateElementsList();
-    resetIntervention();
-  } catch (error) {
-    console.error('Error loading interactions:', error);
-    alert('Failed to load interaction data. Please try again.');
-  }
+function loadInteractions(view = 'exercise') {
+  interactions = dataViews[view];
+  initializeGraph();
+  displayInteractions();
+  populateElementsList();
+  resetIntervention();
 }
 
 function initializeGraph() {
